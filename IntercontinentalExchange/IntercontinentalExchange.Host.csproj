@@ -1,0 +1,24 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <AssemblyName>IntercontinentalExchange.Host</AssemblyName>
+    <RootNamespace>IntercontinentalExchange.Host</RootNamespace>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AspNetCoreRateLimit" Version="3.2.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IntercontinentalExchange.Application\IntercontinentalExchange.Application.csproj" />
+    <ProjectReference Include="..\IntercontinentalExchange.Domain\IntercontinentalExchange.Domain.csproj" />
+    <ProjectReference Include="..\IntercontinentalExchange.Infrastructure\IntercontinentalExchange.Infrastructure.csproj" />
+  </ItemGroup>
+
+
+</Project>

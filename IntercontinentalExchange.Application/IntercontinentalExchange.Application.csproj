@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Library</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ApplicationIcon />
+    <StartupObject />
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\**" />
+    <Compile Remove="Queries\**" />
+    <EmbeddedResource Remove="Commands\**" />
+    <EmbeddedResource Remove="Queries\**" />
+    <None Remove="Commands\**" />
+    <None Remove="Queries\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\IntercontinentalExchange.Domain\IntercontinentalExchange.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
